@@ -51,6 +51,7 @@ tr:nth-child(even) {
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 60px;
+    margin-bottom: 100px;
 }
 a{
   text-decoration:none;
@@ -80,10 +81,12 @@ li.loja{
   border-right: 2px solid gray;
 }
 
-li.familia{
-  display: inline-block;
-  width:10%;
-  border-right: 2px solid gray;
+li.familia {
+    display: inline-block;
+    width: auto;
+    border-right: 2px solid gray;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 li.familia:last-child{

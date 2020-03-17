@@ -50,3 +50,12 @@ select{
 .area{
   font-size: 18px;
 }
+
+@media screen and (min-width: 600px) {
+  td {
+    font-size: 25px;
+  }
+  .filtro{
+    font-size: 25px;
+  }
+}

@@ -17,10 +17,14 @@
  <li class="familia"> <%= link_to "Kaki", products_path(:family=>5), :class => 'filtro' %></li>
  <li class="familia"> <%= link_to "Vaz Pinto", products_path(:family=>2), :class => 'filtro' %></li>
  <li class="familia"> <%= link_to "Tia Cau", products_path(:family=>7), :class => 'filtro' %></li>
+ <li class="familia"> <%= link_to "Cordoeiro", products_path(:family=>8), :class => 'filtro' %></li>
   </ul>
 </div>
 
 <h1 class="title">compras</h1>
+<div style="margin-bottom: 100px;">
+<%= link_to 'Adicionar Pedido', new_product_path, :class => 'adicionar mais' %>
+</div>
 
 <table style="width:100%; text-align:center;">
   <thead>
@@ -46,5 +50,3 @@
 </table>
 
 <br>
-
-<%= link_to 'Adicionar Pedido', new_product_path, :class => 'adicionar mais' %>
