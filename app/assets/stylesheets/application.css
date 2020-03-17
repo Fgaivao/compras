@@ -13,3 +13,40 @@
  *= require_tree .
  *= require_self
  */
+.field{
+  text-align: center;
+}
+
+label{
+  width:100%;
+}
+
+.novo{
+  border-radius: 10px;
+
+}
+.label{
+  font-size: 18px;
+
+}
+
+select{
+  border-radius: 10px;
+  width:40%;
+  height: 40px;
+}
+
+.pedido{
+    font-size: 15px;
+    font-weight: 500;
+    background-color: red;
+    color: white !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 60px;
+}
+.area{
+  font-size: 18px;
+}

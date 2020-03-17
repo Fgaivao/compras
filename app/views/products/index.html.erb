@@ -1,13 +1,33 @@
 <p id="notice"><%= notice %></p>
+<div class="filtroum">
+<h2> Filtrar por loja </h2>
+<ul>
+<li class="loja"><%= link_to "Supermercado", products_path(:loja=>1), :class => 'filtro' %></li>
+  <li class="loja"><%= link_to "Talho", products_path(:loja=>2), :class => 'filtro' %></li>
+  <li class="loja"><%= link_to "Farmácia", products_path(:loja=>3), :class => 'filtro' %></li><br><br>
+</ul>
+</div>
+<div class="filtrodois">
+  <h2> Filtrar por casa </h2>
+  <ul>
+  <li class="familia"><%= link_to "Almeida Lima", products_path(:family=>3), :class => 'filtro' %></li>
+ <li class="familia"> <%= link_to "Gaivão", products_path(:family=>1), :class => 'filtro' %></li>
+ <li class="familia"> <%= link_to "Praça", products_path(:family=>6), :class => 'filtro' %></li>
+ <li class="familia"> <%= link_to "Zi", products_path(:family=>4), :class => 'filtro' %></li>
+ <li class="familia"> <%= link_to "Kaki", products_path(:family=>5), :class => 'filtro' %></li>
+ <li class="familia"> <%= link_to "Vaz Pinto", products_path(:family=>2), :class => 'filtro' %></li>
+ <li class="familia"> <%= link_to "Tia Cau", products_path(:family=>7), :class => 'filtro' %></li>
+  </ul>
+</div>
 
-<h1>Products</h1>
+<h1 class="title">compras</h1>
 
-<table>
+<table style="width:100%; text-align:center;">
   <thead>
     <tr>
-      <th>Name</th>
+      <th>Produto</th>
       <th>Loja</th>
-      <th>Family</th>
+      <th>Casa</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,11 +36,10 @@
     <% @products.each do |product| %>
       <tr>
         <td><%= product.name %></td>
-        <td><%= product.loja_id %></td>
-        <td><%= product.family_id %></td>
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= product.loja.name %></td>
+        <td><%= product.family.name %></td>
+        <td><%= link_to 'Editar', edit_product_path(product), :class => 'adicionar editar' %></td>
+        <td><%= link_to 'Comprado', product, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'adicionar apagar' %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +47,4 @@
 
 <br>
 
-<%= link_to 'New Product', new_product_path %>
+<%= link_to 'Adicionar Pedido', new_product_path, :class => 'adicionar mais' %>

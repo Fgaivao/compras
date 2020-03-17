@@ -12,21 +12,21 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :name %>
-    <%= form.text_area :name %>
-  </div>
+    <%= form.label :nome, :class => 'label' %><br><br>
+    <%= form.text_area :name, cols: "70", rows: "5", :class => 'area' %>
+  </div><br><br>
 
   <div class="field">
-    <%= form.label :loja_id %>
-    <%= form.text_field :loja_id %>
-  </div>
+    <%= form.label :loja_id, :class => 'label' %><br><br>
+    <%= form.collection_select :loja_id, Loja.order(:name), :id, :name, include_blank: true, :class => 'novo' %>
+  </div><br><br>
 
   <div class="field">
-    <%= form.label :family_id %>
-    <%= form.text_field :family_id %>
-  </div>
+    <%= form.label :casa, :class => 'label' %><br><br>
+   <%= form.collection_select :family_id, Family.order(:name), :id, :name, include_blank: true, :class => 'novo' %>
+  </div><br><br>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="actions" style="text-align: center;">
+    <%= form.submit 'Fazer pedido', :class => 'pedido' %>
   </div>
 <% end %>

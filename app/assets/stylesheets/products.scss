@@ -1,3 +1,95 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.editar{
+background-color: red;
+color: white !important;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 20px;
+padding-right: 20px;
+border-radius: 25px;
+
+}
+
+.apagar{
+background-color: red;
+color: white !important;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 20px;
+padding-right: 20px;
+border-radius: 25px;
+
+}
+th{
+  border-bottom: 3px solid gray;
+}
+
+td{
+   line-height: 5;
+   font-size: 18px;
+}
+
+.title{
+text-align:center;
+margin-top: 100px;
+
+}
+
+tr:nth-child(even) {
+  background: #CCC
+}
+
+.mais {
+    font-size: 20px;
+    font-weight: 900;
+    background-color: red;
+    color: white !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 60px;
+}
+a{
+  text-decoration:none;
+}
+
+.filtroum{
+  width:100%
+}
+
+.filtrodois{
+  width:100%
+}
+.filtro{
+  font-size: 15px;
+  color: gray
+}
+ul{
+  list-style-type: none;
+  display: inline-block;
+  width:100%;
+  text-align:center;
+}
+
+li.loja{
+  display: inline-block;
+  width:25%;
+  border-right: 2px solid gray;
+}
+
+li.familia{
+  display: inline-block;
+  width:10%;
+  border-right: 2px solid gray;
+}
+
+li.familia:last-child{
+  border-right: 0
+}
+
+li.loja:last-child{
+  border-right: 0
+}
